@@ -1,0 +1,1970 @@
+{
+    "report_data_sources": {
+        "featureCounts": {
+            "all_sections": {
+                "ERR204916": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/17/ERR204916.featureCounts.txt.summary",
+                "ERR188428": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/18/ERR188428.featureCounts.txt.summary",
+                "ERR188454": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/16/ERR188454.featureCounts.txt.summary",
+                "ERR188383": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/15/ERR188383.featureCounts.txt.summary"
+            }
+        },
+        "Samtools": {
+            "stats": {
+                "ERR188383": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/7/ERR188383.stats",
+                "ERR188454": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/9/ERR188454.stats",
+                "ERR204916": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/10/ERR204916.stats",
+                "ERR188428": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/8/ERR188428.stats"
+            },
+            "flagstat": {
+                "ERR188454": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/11/ERR188454.flagstat",
+                "ERR204916": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/14/ERR204916.flagstat",
+                "ERR188383": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/12/ERR188383.flagstat",
+                "ERR188428": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/13/ERR188428.flagstat"
+            },
+            "idxstats": {
+                "ERR188454": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/4/ERR188454.idxstats",
+                "ERR204916": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/3/ERR204916.idxstats",
+                "ERR188428": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/6/ERR188428.idxstats",
+                "ERR188383": "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/5/ERR188383.idxstats"
+            }
+        }
+    },
+    "report_general_stats_data": [
+        {
+            "ERR204916": {
+                "Total": 50151,
+                "Assigned": 46081,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 1895,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 2175,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 0,
+                "percent_assigned": 91.8845087834739
+            },
+            "ERR188428": {
+                "Total": 50125,
+                "Assigned": 46220,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 1712,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 2193,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 0,
+                "percent_assigned": 92.20947630922693
+            },
+            "ERR188454": {
+                "Total": 50580,
+                "Assigned": 46150,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 2009,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 2421,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 0,
+                "percent_assigned": 91.24159746935547
+            },
+            "ERR188383": {
+                "Total": 50413,
+                "Assigned": 46733,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 1825,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 1855,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 0,
+                "percent_assigned": 92.70029555868527
+            }
+        },
+        {
+            "ERR188383": {
+                "raw_total_sequences": 98732.0,
+                "filtered_sequences": 0.0,
+                "sequences": 98732.0,
+                "is_sorted": 1.0,
+                "1st_fragments": 49366.0,
+                "last_fragments": 49366.0,
+                "reads_mapped": 98732.0,
+                "reads_mapped_and_paired": 98732.0,
+                "reads_unmapped": 0.0,
+                "reads_properly_paired": 98732.0,
+                "reads_paired": 98732.0,
+                "reads_duplicated": 0.0,
+                "reads_MQ0": 46.0,
+                "reads_QC_failed": 0.0,
+                "non-primary_alignments": 2094.0,
+                "supplementary_alignments": 0.0,
+                "total_length": 7404900.0,
+                "total_first_fragment_length": 3702450.0,
+                "total_last_fragment_length": 3702450.0,
+                "bases_mapped": 7404900.0,
+                "bases_mapped_(cigar)": 7373518.0,
+                "bases_trimmed": 0.0,
+                "bases_duplicated": 0.0,
+                "mismatches": 30902.0,
+                "error_rate": 0.004190944,
+                "average_length": 75.0,
+                "average_first_fragment_length": 75.0,
+                "average_last_fragment_length": 75.0,
+                "maximum_length": 75.0,
+                "maximum_first_fragment_length": 75.0,
+                "maximum_last_fragment_length": 75.0,
+                "average_quality": 36.5,
+                "insert_size_average": 1044.9,
+                "insert_size_standard_deviation": 1821.6,
+                "inward_oriented_pairs": 49343.0,
+                "outward_oriented_pairs": 23.0,
+                "pairs_with_other_orientation": 0.0,
+                "pairs_on_different_chromosomes": 0.0,
+                "percentage_of_properly_paired_reads_(%)": 100.0,
+                "reads_mapped_percent": 100.0,
+                "reads_mapped_and_paired_percent": 100.0,
+                "reads_unmapped_percent": 0.0,
+                "reads_properly_paired_percent": 100.0,
+                "reads_paired_percent": 100.0,
+                "reads_duplicated_percent": 0.0,
+                "reads_MQ0_percent": 0.04659077097597537,
+                "reads_QC_failed_percent": 0.0
+            },
+            "ERR188454": {
+                "raw_total_sequences": 98800.0,
+                "filtered_sequences": 0.0,
+                "sequences": 98800.0,
+                "is_sorted": 1.0,
+                "1st_fragments": 49400.0,
+                "last_fragments": 49400.0,
+                "reads_mapped": 98800.0,
+                "reads_mapped_and_paired": 98800.0,
+                "reads_unmapped": 0.0,
+                "reads_properly_paired": 98800.0,
+                "reads_paired": 98800.0,
+                "reads_duplicated": 0.0,
+                "reads_MQ0": 42.0,
+                "reads_QC_failed": 0.0,
+                "non-primary_alignments": 2360.0,
+                "supplementary_alignments": 0.0,
+                "total_length": 7410000.0,
+                "total_first_fragment_length": 3705000.0,
+                "total_last_fragment_length": 3705000.0,
+                "bases_mapped": 7410000.0,
+                "bases_mapped_(cigar)": 7379482.0,
+                "bases_trimmed": 0.0,
+                "bases_duplicated": 0.0,
+                "mismatches": 33331.0,
+                "error_rate": 0.004516713,
+                "average_length": 75.0,
+                "average_first_fragment_length": 75.0,
+                "average_last_fragment_length": 75.0,
+                "maximum_length": 75.0,
+                "maximum_first_fragment_length": 75.0,
+                "maximum_last_fragment_length": 75.0,
+                "average_quality": 36.1,
+                "insert_size_average": 1020.4,
+                "insert_size_standard_deviation": 1805.2,
+                "inward_oriented_pairs": 49380.0,
+                "outward_oriented_pairs": 20.0,
+                "pairs_with_other_orientation": 0.0,
+                "pairs_on_different_chromosomes": 0.0,
+                "percentage_of_properly_paired_reads_(%)": 100.0,
+                "reads_mapped_percent": 100.0,
+                "reads_mapped_and_paired_percent": 100.0,
+                "reads_unmapped_percent": 0.0,
+                "reads_properly_paired_percent": 100.0,
+                "reads_paired_percent": 100.0,
+                "reads_duplicated_percent": 0.0,
+                "reads_MQ0_percent": 0.04251012145748988,
+                "reads_QC_failed_percent": 0.0
+            },
+            "ERR204916": {
+                "raw_total_sequences": 98182.0,
+                "filtered_sequences": 0.0,
+                "sequences": 98182.0,
+                "is_sorted": 1.0,
+                "1st_fragments": 49091.0,
+                "last_fragments": 49091.0,
+                "reads_mapped": 98182.0,
+                "reads_mapped_and_paired": 98182.0,
+                "reads_unmapped": 0.0,
+                "reads_properly_paired": 98182.0,
+                "reads_paired": 98182.0,
+                "reads_duplicated": 0.0,
+                "reads_MQ0": 44.0,
+                "reads_QC_failed": 0.0,
+                "non-primary_alignments": 2120.0,
+                "supplementary_alignments": 0.0,
+                "total_length": 7363650.0,
+                "total_first_fragment_length": 3681825.0,
+                "total_last_fragment_length": 3681825.0,
+                "bases_mapped": 7363650.0,
+                "bases_mapped_(cigar)": 7324692.0,
+                "bases_trimmed": 0.0,
+                "bases_duplicated": 0.0,
+                "mismatches": 39573.0,
+                "error_rate": 0.005402685,
+                "average_length": 75.0,
+                "average_first_fragment_length": 75.0,
+                "average_last_fragment_length": 75.0,
+                "maximum_length": 75.0,
+                "maximum_first_fragment_length": 75.0,
+                "maximum_last_fragment_length": 75.0,
+                "average_quality": 35.9,
+                "insert_size_average": 1061.3,
+                "insert_size_standard_deviation": 1840.3,
+                "inward_oriented_pairs": 49079.0,
+                "outward_oriented_pairs": 12.0,
+                "pairs_with_other_orientation": 0.0,
+                "pairs_on_different_chromosomes": 0.0,
+                "percentage_of_properly_paired_reads_(%)": 100.0,
+                "reads_mapped_percent": 100.0,
+                "reads_mapped_and_paired_percent": 100.0,
+                "reads_unmapped_percent": 0.0,
+                "reads_properly_paired_percent": 100.0,
+                "reads_paired_percent": 100.0,
+                "reads_duplicated_percent": 0.0,
+                "reads_MQ0_percent": 0.04481473182457069,
+                "reads_QC_failed_percent": 0.0
+            },
+            "ERR188428": {
+                "raw_total_sequences": 98292.0,
+                "filtered_sequences": 0.0,
+                "sequences": 98292.0,
+                "is_sorted": 1.0,
+                "1st_fragments": 49146.0,
+                "last_fragments": 49146.0,
+                "reads_mapped": 98292.0,
+                "reads_mapped_and_paired": 98292.0,
+                "reads_unmapped": 0.0,
+                "reads_properly_paired": 98292.0,
+                "reads_paired": 98292.0,
+                "reads_duplicated": 0.0,
+                "reads_MQ0": 44.0,
+                "reads_QC_failed": 0.0,
+                "non-primary_alignments": 1958.0,
+                "supplementary_alignments": 0.0,
+                "total_length": 7371900.0,
+                "total_first_fragment_length": 3685950.0,
+                "total_last_fragment_length": 3685950.0,
+                "bases_mapped": 7371900.0,
+                "bases_mapped_(cigar)": 7331541.0,
+                "bases_trimmed": 0.0,
+                "bases_duplicated": 0.0,
+                "mismatches": 34517.0,
+                "error_rate": 0.004708014,
+                "average_length": 75.0,
+                "average_first_fragment_length": 75.0,
+                "average_last_fragment_length": 75.0,
+                "maximum_length": 75.0,
+                "maximum_first_fragment_length": 75.0,
+                "maximum_last_fragment_length": 75.0,
+                "average_quality": 36.6,
+                "insert_size_average": 1109.7,
+                "insert_size_standard_deviation": 1876.0,
+                "inward_oriented_pairs": 49134.0,
+                "outward_oriented_pairs": 12.0,
+                "pairs_with_other_orientation": 0.0,
+                "pairs_on_different_chromosomes": 0.0,
+                "percentage_of_properly_paired_reads_(%)": 100.0,
+                "reads_mapped_percent": 100.0,
+                "reads_mapped_and_paired_percent": 100.0,
+                "reads_unmapped_percent": 0.0,
+                "reads_properly_paired_percent": 100.0,
+                "reads_paired_percent": 100.0,
+                "reads_duplicated_percent": 0.0,
+                "reads_MQ0_percent": 0.044764579009481956,
+                "reads_QC_failed_percent": 0.0
+            }
+        },
+        {
+            "ERR188454": {
+                "total_passed": 101160,
+                "total_failed": 0,
+                "secondary_passed": 2360,
+                "secondary_failed": 0,
+                "supplementary_passed": 0,
+                "supplementary_failed": 0,
+                "duplicates_passed": 0,
+                "duplicates_failed": 0,
+                "mapped_passed": 101160,
+                "mapped_failed": 0,
+                "mapped_passed_pct": 100.0,
+                "mapped_failed_pct": NaN,
+                "paired in sequencing_passed": 98800,
+                "paired in sequencing_failed": 0,
+                "read1_passed": 49400,
+                "read1_failed": 0,
+                "read2_passed": 49400,
+                "read2_failed": 0,
+                "properly paired_passed": 98800,
+                "properly paired_failed": 0,
+                "properly paired_passed_pct": 100.0,
+                "properly paired_failed_pct": NaN,
+                "with itself and mate mapped_passed": 98800,
+                "with itself and mate mapped_failed": 0,
+                "singletons_passed": 0,
+                "singletons_failed": 0,
+                "singletons_passed_pct": 0.0,
+                "singletons_failed_pct": NaN,
+                "with mate mapped to a different chr_passed": 0,
+                "with mate mapped to a different chr_failed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_passed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_failed": 0,
+                "flagstat_total": 101160
+            },
+            "ERR204916": {
+                "total_passed": 100302,
+                "total_failed": 0,
+                "secondary_passed": 2120,
+                "secondary_failed": 0,
+                "supplementary_passed": 0,
+                "supplementary_failed": 0,
+                "duplicates_passed": 0,
+                "duplicates_failed": 0,
+                "mapped_passed": 100302,
+                "mapped_failed": 0,
+                "mapped_passed_pct": 100.0,
+                "mapped_failed_pct": NaN,
+                "paired in sequencing_passed": 98182,
+                "paired in sequencing_failed": 0,
+                "read1_passed": 49091,
+                "read1_failed": 0,
+                "read2_passed": 49091,
+                "read2_failed": 0,
+                "properly paired_passed": 98182,
+                "properly paired_failed": 0,
+                "properly paired_passed_pct": 100.0,
+                "properly paired_failed_pct": NaN,
+                "with itself and mate mapped_passed": 98182,
+                "with itself and mate mapped_failed": 0,
+                "singletons_passed": 0,
+                "singletons_failed": 0,
+                "singletons_passed_pct": 0.0,
+                "singletons_failed_pct": NaN,
+                "with mate mapped to a different chr_passed": 0,
+                "with mate mapped to a different chr_failed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_passed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_failed": 0,
+                "flagstat_total": 100302
+            },
+            "ERR188383": {
+                "total_passed": 100826,
+                "total_failed": 0,
+                "secondary_passed": 2094,
+                "secondary_failed": 0,
+                "supplementary_passed": 0,
+                "supplementary_failed": 0,
+                "duplicates_passed": 0,
+                "duplicates_failed": 0,
+                "mapped_passed": 100826,
+                "mapped_failed": 0,
+                "mapped_passed_pct": 100.0,
+                "mapped_failed_pct": NaN,
+                "paired in sequencing_passed": 98732,
+                "paired in sequencing_failed": 0,
+                "read1_passed": 49366,
+                "read1_failed": 0,
+                "read2_passed": 49366,
+                "read2_failed": 0,
+                "properly paired_passed": 98732,
+                "properly paired_failed": 0,
+                "properly paired_passed_pct": 100.0,
+                "properly paired_failed_pct": NaN,
+                "with itself and mate mapped_passed": 98732,
+                "with itself and mate mapped_failed": 0,
+                "singletons_passed": 0,
+                "singletons_failed": 0,
+                "singletons_passed_pct": 0.0,
+                "singletons_failed_pct": NaN,
+                "with mate mapped to a different chr_passed": 0,
+                "with mate mapped to a different chr_failed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_passed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_failed": 0,
+                "flagstat_total": 100826
+            },
+            "ERR188428": {
+                "total_passed": 100250,
+                "total_failed": 0,
+                "secondary_passed": 1958,
+                "secondary_failed": 0,
+                "supplementary_passed": 0,
+                "supplementary_failed": 0,
+                "duplicates_passed": 0,
+                "duplicates_failed": 0,
+                "mapped_passed": 100250,
+                "mapped_failed": 0,
+                "mapped_passed_pct": 100.0,
+                "mapped_failed_pct": NaN,
+                "paired in sequencing_passed": 98292,
+                "paired in sequencing_failed": 0,
+                "read1_passed": 49146,
+                "read1_failed": 0,
+                "read2_passed": 49146,
+                "read2_failed": 0,
+                "properly paired_passed": 98292,
+                "properly paired_failed": 0,
+                "properly paired_passed_pct": 100.0,
+                "properly paired_failed_pct": NaN,
+                "with itself and mate mapped_passed": 98292,
+                "with itself and mate mapped_failed": 0,
+                "singletons_passed": 0,
+                "singletons_failed": 0,
+                "singletons_passed_pct": 0.0,
+                "singletons_failed_pct": NaN,
+                "with mate mapped to a different chr_passed": 0,
+                "with mate mapped to a different chr_failed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_passed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_failed": 0,
+                "flagstat_total": 100250
+            }
+        }
+    ],
+    "report_general_stats_headers": [
+        {
+            "percent_assigned": {
+                "title": "% Assigned",
+                "description": "% Assigned reads",
+                "max": 100,
+                "min": 0,
+                "suffix": "%",
+                "scale": "RdYlGn",
+                "namespace": "featureCounts",
+                "rid": "mqc-generalstats-featurecounts-percent_assigned",
+                "format": "{:,.1f}",
+                "colour": "55,126,184",
+                "hidden": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "shared_key": null,
+                "modify": null,
+                "placement": 1000.0,
+                "dmax": 100.0,
+                "dmin": 0.0
+            },
+            "Assigned": {
+                "title": "M Assigned",
+                "description": "Assigned reads (millions)",
+                "min": 0,
+                "scale": "PuBu",
+                "modify": 1e-06,
+                "shared_key": "read_count",
+                "namespace": "featureCounts",
+                "rid": "mqc-generalstats-featurecounts-Assigned",
+                "format": "{:,.1f}",
+                "colour": "55,126,184",
+                "hidden": null,
+                "max": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "placement": 1000.0,
+                "dmax": 0.10116,
+                "dmin": 0.0
+            }
+        },
+        {
+            "error_rate": {
+                "title": "Error rate",
+                "description": "Error rate: mismatches (NM) / bases mapped (CIGAR)",
+                "min": 0,
+                "max": 100,
+                "suffix": "%",
+                "scale": "OrRd",
+                "format": "{:,.2f}",
+                "modify": 100.0,
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-error_rate",
+                "colour": "77,175,74",
+                "hidden": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "shared_key": null,
+                "placement": 1000.0,
+                "dmax": 100.0,
+                "dmin": 0.0
+            },
+            "non-primary_alignments": {
+                "title": "M Non-Primary",
+                "description": "Non-primary alignments (millions)",
+                "min": 0,
+                "scale": "PuBu",
+                "modify": 1e-06,
+                "shared_key": "read_count",
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-non_primary_alignments",
+                "format": "{:,.1f}",
+                "colour": "77,175,74",
+                "hidden": null,
+                "max": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "placement": 1000.0,
+                "dmax": 0.10116,
+                "dmin": 0.0
+            },
+            "reads_mapped": {
+                "title": "M Reads Mapped",
+                "description": "Reads Mapped in the bam file (millions)",
+                "min": 0,
+                "modify": 1e-06,
+                "shared_key": "read_count",
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-reads_mapped",
+                "scale": "GnBu",
+                "format": "{:,.1f}",
+                "colour": "77,175,74",
+                "hidden": null,
+                "max": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "placement": 1000.0,
+                "dmax": 0.10116,
+                "dmin": 0.0
+            },
+            "reads_mapped_percent": {
+                "title": "% Mapped",
+                "description": "% Mapped Reads",
+                "max": 100,
+                "min": 0,
+                "suffix": "%",
+                "scale": "RdYlGn",
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-reads_mapped_percent",
+                "format": "{:,.1f}",
+                "colour": "77,175,74",
+                "hidden": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "shared_key": null,
+                "modify": null,
+                "placement": 1000.0,
+                "dmax": 100.0,
+                "dmin": 0.0
+            },
+            "reads_properly_paired_percent": {
+                "title": "% Proper Pairs",
+                "description": "% Properly Paired Reads",
+                "max": 100,
+                "min": 0,
+                "suffix": "%",
+                "scale": "RdYlGn",
+                "hidden": false,
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-reads_properly_paired_percent",
+                "format": "{:,.1f}",
+                "colour": "77,175,74",
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "shared_key": null,
+                "modify": null,
+                "placement": 1000.0,
+                "dmax": 100.0,
+                "dmin": 0.0
+            },
+            "reads_MQ0_percent": {
+                "title": "% MapQ 0 Reads",
+                "description": "% of Reads that are Ambiguously Placed (MapQ=0)",
+                "max": 100,
+                "min": 0,
+                "suffix": "%",
+                "scale": "OrRd",
+                "hidden": true,
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-reads_MQ0_percent",
+                "format": "{:,.1f}",
+                "colour": "77,175,74",
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "shared_key": null,
+                "modify": null,
+                "placement": 1000.0,
+                "dmax": 100.0,
+                "dmin": 0.0
+            },
+            "raw_total_sequences": {
+                "title": "M Total seqs",
+                "description": "Total sequences in the bam file (millions)",
+                "min": 0,
+                "modify": 1e-06,
+                "shared_key": "read_count",
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-raw_total_sequences",
+                "scale": "GnBu",
+                "format": "{:,.1f}",
+                "colour": "77,175,74",
+                "hidden": null,
+                "max": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "placement": 1000.0,
+                "dmax": 0.10116,
+                "dmin": 0.0
+            }
+        },
+        {
+            "flagstat_total": {
+                "title": "M Reads",
+                "description": "Total reads in the bam file (millions)",
+                "min": 0,
+                "modify": 1e-06,
+                "shared_key": "read_count",
+                "hidden": true,
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-flagstat_total",
+                "scale": "GnBu",
+                "format": "{:,.1f}",
+                "colour": "152,78,163",
+                "max": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "placement": 1000.0,
+                "dmax": 0.10116,
+                "dmin": 0.0
+            },
+            "mapped_passed": {
+                "title": "M Reads Mapped",
+                "description": "Reads Mapped in the bam file (millions)",
+                "min": 0,
+                "modify": 1e-06,
+                "shared_key": "read_count",
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-mapped_passed",
+                "scale": "GnBu",
+                "format": "{:,.1f}",
+                "colour": "152,78,163",
+                "hidden": null,
+                "max": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "placement": 1000.0,
+                "dmax": 0.10116,
+                "dmin": 0.0
+            },
+            "mapped_passed_pct": {
+                "title": "% Reads Mapped",
+                "description": "% Reads Mapped in the bam file",
+                "min": 0,
+                "max": 100,
+                "suffix": "%",
+                "scale": "RdYlGn",
+                "hidden": true,
+                "namespace": "Samtools",
+                "rid": "mqc-generalstats-samtools-mapped_passed_pct",
+                "format": "{:,.1f}",
+                "colour": "152,78,163",
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "shared_key": null,
+                "modify": null,
+                "placement": 1000.0,
+                "dmax": 100.0,
+                "dmin": 0.0
+            }
+        }
+    ],
+    "report_multiqc_command": "/usr/local/bin/multiqc --force --config multiqc_config.yml .",
+    "report_plot_data": {
+        "featureCounts_assignment_plot-1": {
+            "plot_type": "bar_graph",
+            "samples": [
+                [
+                    "ERR188383",
+                    "ERR188428",
+                    "ERR188454",
+                    "ERR204916"
+                ]
+            ],
+            "datasets": [
+                [
+                    {
+                        "name": "Assigned",
+                        "data": [
+                            46733.0,
+                            46220.0,
+                            46150.0,
+                            46081.0
+                        ]
+                    },
+                    {
+                        "name": "Unassigned: Multi Mapping",
+                        "data": [
+                            1825.0,
+                            1712.0,
+                            2009.0,
+                            1895.0
+                        ]
+                    },
+                    {
+                        "name": "Unassigned: No Features",
+                        "data": [
+                            1855.0,
+                            2193.0,
+                            2421.0,
+                            2175.0
+                        ]
+                    }
+                ]
+            ],
+            "config": {
+                "id": "featureCounts_assignment_plot-1",
+                "title": "featureCounts: Assignments",
+                "ylab": "# Reads",
+                "cpswitch_counts_label": "Number of Reads"
+            }
+        },
+        "samtools_alignment_plot-1": {
+            "plot_type": "bar_graph",
+            "samples": [
+                [
+                    "ERR188383",
+                    "ERR188428",
+                    "ERR188454",
+                    "ERR204916"
+                ]
+            ],
+            "datasets": [
+                [
+                    {
+                        "name": "Mapped",
+                        "data": [
+                            98732.0,
+                            98292.0,
+                            98800.0,
+                            98182.0
+                        ],
+                        "color": "#437bb1"
+                    }
+                ]
+            ],
+            "config": {
+                "id": "samtools_alignment_plot-1",
+                "title": "Samtools stats: Alignment Scores",
+                "ylab": "# Reads",
+                "cpswitch_counts_label": "Number of Reads"
+            }
+        },
+        "samtools-stats-dp": {
+            "plot_type": "beeswarm",
+            "samples": [
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188383",
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188428"
+                ]
+            ],
+            "datasets": [
+                [
+                    0.098732,
+                    0.0988,
+                    0.098182,
+                    0.098292
+                ],
+                [
+                    0.098732,
+                    0.0988,
+                    0.098182,
+                    0.098292
+                ],
+                [
+                    0.098732,
+                    0.0988,
+                    0.098182,
+                    0.098292
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    4.6e-05,
+                    4.2e-05,
+                    4.4e-05,
+                    4.4e-05
+                ],
+                [
+                    7.373518,
+                    7.379482,
+                    7.324692,
+                    7.331541
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.049343,
+                    0.04938,
+                    0.049079,
+                    0.049134
+                ],
+                [
+                    2.3e-05,
+                    2e-05,
+                    1.2e-05,
+                    1.2e-05
+                ]
+            ],
+            "categories": [
+                {
+                    "namespace": "",
+                    "title": "Total sequences",
+                    "description": "Total sequences",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Mapped &amp; paired",
+                    "description": "Paired-end technology bit set + both mates mapped",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Properly paired",
+                    "description": "Proper-pair bit set",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Duplicated",
+                    "description": "PCR or optical duplicate bit set",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "QC Failed",
+                    "description": "QC Failed",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Reads MQ0",
+                    "description": "Reads mapped and MQ=0",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Mapped bases (CIGAR)",
+                    "description": "Mapped bases (CIGAR)",
+                    "max": 7.379482,
+                    "min": 0.0,
+                    "suffix": "M bases",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Bases Trimmed",
+                    "description": "Bases Trimmed",
+                    "max": 7.379482,
+                    "min": 0.0,
+                    "suffix": "M bases",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Duplicated bases",
+                    "description": "Duplicated bases",
+                    "max": 7.379482,
+                    "min": 0.0,
+                    "suffix": "M bases",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Diff chromosomes",
+                    "description": "Pairs on different chromosomes",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Other orientation",
+                    "description": "Pairs with other orientation",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Inward pairs",
+                    "description": "Inward oriented pairs",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Outward pairs",
+                    "description": "Outward oriented pairs",
+                    "max": 0.0988,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                }
+            ]
+        },
+        "samtools-flagstat-dp": {
+            "plot_type": "beeswarm",
+            "samples": [
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ],
+                [
+                    "ERR188454",
+                    "ERR204916",
+                    "ERR188383",
+                    "ERR188428"
+                ]
+            ],
+            "datasets": [
+                [
+                    0.10116,
+                    0.100302,
+                    0.100826,
+                    0.10024999999999999
+                ],
+                [
+                    0.10116,
+                    0.100302,
+                    0.100826,
+                    0.10024999999999999
+                ],
+                [
+                    0.10116,
+                    0.100302,
+                    0.100826,
+                    0.10024999999999999
+                ],
+                [
+                    0.0023599999999999997,
+                    0.00212,
+                    0.002094,
+                    0.001958
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0988,
+                    0.09818199999999999,
+                    0.098732,
+                    0.09829199999999999
+                ],
+                [
+                    0.0988,
+                    0.09818199999999999,
+                    0.098732,
+                    0.09829199999999999
+                ],
+                [
+                    0.0988,
+                    0.09818199999999999,
+                    0.098732,
+                    0.09829199999999999
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            ],
+            "categories": [
+                {
+                    "namespace": "",
+                    "title": "Total Reads",
+                    "description": "Total Reads",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Total Passed QC",
+                    "description": "Total Passed QC",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Mapped",
+                    "description": "Mapped",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Secondary Alignments",
+                    "description": "Secondary Alignments",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Duplicates",
+                    "description": "Duplicates",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Paired in Sequencing",
+                    "description": "Paired in Sequencing",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Properly Paired",
+                    "description": "Properly Paired",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Self and mate mapped",
+                    "description": "Reads with itself and mate mapped",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Singletons",
+                    "description": "Singletons",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Mate mapped to diff chr",
+                    "description": "Mate mapped to different chromosome",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                },
+                {
+                    "namespace": "",
+                    "title": "Diff chr (mapQ >= 5)",
+                    "description": "Mate mapped to different chromosome (mapQ >= 5)",
+                    "max": 0.10116,
+                    "min": 0.0,
+                    "suffix": "M reads",
+                    "decimalPlaces": 2,
+                    "bordercol": "rgb(55,126,184)"
+                }
+            ]
+        },
+        "samtools-idxstats-mapped-reads-plot-1": {
+            "plot_type": "xy_line",
+            "datasets": [
+                [
+                    {
+                        "name": "ERR188383",
+                        "data": [
+                            1.0
+                        ]
+                    },
+                    {
+                        "name": "ERR188428",
+                        "data": [
+                            1.0
+                        ]
+                    },
+                    {
+                        "name": "ERR188454",
+                        "data": [
+                            1.0
+                        ]
+                    },
+                    {
+                        "name": "ERR204916",
+                        "data": [
+                            1.0
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "ERR188383",
+                        "data": [
+                            1.0
+                        ]
+                    },
+                    {
+                        "name": "ERR188428",
+                        "data": [
+                            1.0
+                        ]
+                    },
+                    {
+                        "name": "ERR188454",
+                        "data": [
+                            1.0
+                        ]
+                    },
+                    {
+                        "name": "ERR204916",
+                        "data": [
+                            1.0
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "ERR188383",
+                        "data": [
+                            100826
+                        ]
+                    },
+                    {
+                        "name": "ERR188428",
+                        "data": [
+                            100250
+                        ]
+                    },
+                    {
+                        "name": "ERR188454",
+                        "data": [
+                            101160
+                        ]
+                    },
+                    {
+                        "name": "ERR204916",
+                        "data": [
+                            100302
+                        ]
+                    }
+                ]
+            ],
+            "config": {
+                "id": "samtools-idxstats-mapped-reads-plot-1",
+                "title": "Samtools idxstats: Mapped reads per contig",
+                "ylab": "# mapped reads",
+                "xlab": "Chromosome Name",
+                "logswitch": true,
+                "categories": [
+                    "X"
+                ],
+                "tt_label": "<strong>{point.category}:</strong> {point.y:.2f}",
+                "data_labels": [
+                    {
+                        "name": "Normalised Counts",
+                        "ylab": "Fraction of total count"
+                    },
+                    {
+                        "name": "Observed over Expected Counts",
+                        "ylab": "log10 ( Observed over expected counts )"
+                    },
+                    {
+                        "name": "Raw Counts",
+                        "ylab": "# mapped reads"
+                    }
+                ]
+            }
+        }
+    },
+    "report_saved_raw_data": {
+        "multiqc_featureCounts": {
+            "ERR204916": {
+                "Total": 50151,
+                "Assigned": 46081,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 1895,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 2175,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 0,
+                "percent_assigned": 91.8845087834739
+            },
+            "ERR188428": {
+                "Total": 50125,
+                "Assigned": 46220,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 1712,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 2193,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 0,
+                "percent_assigned": 92.20947630922693
+            },
+            "ERR188454": {
+                "Total": 50580,
+                "Assigned": 46150,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 2009,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 2421,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 0,
+                "percent_assigned": 91.24159746935547
+            },
+            "ERR188383": {
+                "Total": 50413,
+                "Assigned": 46733,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 1825,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 1855,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 0,
+                "percent_assigned": 92.70029555868527
+            }
+        },
+        "multiqc_samtools_stats": {
+            "ERR188383": {
+                "raw_total_sequences": 98732.0,
+                "filtered_sequences": 0.0,
+                "sequences": 98732.0,
+                "is_sorted": 1.0,
+                "1st_fragments": 49366.0,
+                "last_fragments": 49366.0,
+                "reads_mapped": 98732.0,
+                "reads_mapped_and_paired": 98732.0,
+                "reads_unmapped": 0.0,
+                "reads_properly_paired": 98732.0,
+                "reads_paired": 98732.0,
+                "reads_duplicated": 0.0,
+                "reads_MQ0": 46.0,
+                "reads_QC_failed": 0.0,
+                "non-primary_alignments": 2094.0,
+                "supplementary_alignments": 0.0,
+                "total_length": 7404900.0,
+                "total_first_fragment_length": 3702450.0,
+                "total_last_fragment_length": 3702450.0,
+                "bases_mapped": 7404900.0,
+                "bases_mapped_(cigar)": 7373518.0,
+                "bases_trimmed": 0.0,
+                "bases_duplicated": 0.0,
+                "mismatches": 30902.0,
+                "error_rate": 0.004190944,
+                "average_length": 75.0,
+                "average_first_fragment_length": 75.0,
+                "average_last_fragment_length": 75.0,
+                "maximum_length": 75.0,
+                "maximum_first_fragment_length": 75.0,
+                "maximum_last_fragment_length": 75.0,
+                "average_quality": 36.5,
+                "insert_size_average": 1044.9,
+                "insert_size_standard_deviation": 1821.6,
+                "inward_oriented_pairs": 49343.0,
+                "outward_oriented_pairs": 23.0,
+                "pairs_with_other_orientation": 0.0,
+                "pairs_on_different_chromosomes": 0.0,
+                "percentage_of_properly_paired_reads_(%)": 100.0,
+                "reads_mapped_percent": 100.0,
+                "reads_mapped_and_paired_percent": 100.0,
+                "reads_unmapped_percent": 0.0,
+                "reads_properly_paired_percent": 100.0,
+                "reads_paired_percent": 100.0,
+                "reads_duplicated_percent": 0.0,
+                "reads_MQ0_percent": 0.04659077097597537,
+                "reads_QC_failed_percent": 0.0
+            },
+            "ERR188454": {
+                "raw_total_sequences": 98800.0,
+                "filtered_sequences": 0.0,
+                "sequences": 98800.0,
+                "is_sorted": 1.0,
+                "1st_fragments": 49400.0,
+                "last_fragments": 49400.0,
+                "reads_mapped": 98800.0,
+                "reads_mapped_and_paired": 98800.0,
+                "reads_unmapped": 0.0,
+                "reads_properly_paired": 98800.0,
+                "reads_paired": 98800.0,
+                "reads_duplicated": 0.0,
+                "reads_MQ0": 42.0,
+                "reads_QC_failed": 0.0,
+                "non-primary_alignments": 2360.0,
+                "supplementary_alignments": 0.0,
+                "total_length": 7410000.0,
+                "total_first_fragment_length": 3705000.0,
+                "total_last_fragment_length": 3705000.0,
+                "bases_mapped": 7410000.0,
+                "bases_mapped_(cigar)": 7379482.0,
+                "bases_trimmed": 0.0,
+                "bases_duplicated": 0.0,
+                "mismatches": 33331.0,
+                "error_rate": 0.004516713,
+                "average_length": 75.0,
+                "average_first_fragment_length": 75.0,
+                "average_last_fragment_length": 75.0,
+                "maximum_length": 75.0,
+                "maximum_first_fragment_length": 75.0,
+                "maximum_last_fragment_length": 75.0,
+                "average_quality": 36.1,
+                "insert_size_average": 1020.4,
+                "insert_size_standard_deviation": 1805.2,
+                "inward_oriented_pairs": 49380.0,
+                "outward_oriented_pairs": 20.0,
+                "pairs_with_other_orientation": 0.0,
+                "pairs_on_different_chromosomes": 0.0,
+                "percentage_of_properly_paired_reads_(%)": 100.0,
+                "reads_mapped_percent": 100.0,
+                "reads_mapped_and_paired_percent": 100.0,
+                "reads_unmapped_percent": 0.0,
+                "reads_properly_paired_percent": 100.0,
+                "reads_paired_percent": 100.0,
+                "reads_duplicated_percent": 0.0,
+                "reads_MQ0_percent": 0.04251012145748988,
+                "reads_QC_failed_percent": 0.0
+            },
+            "ERR204916": {
+                "raw_total_sequences": 98182.0,
+                "filtered_sequences": 0.0,
+                "sequences": 98182.0,
+                "is_sorted": 1.0,
+                "1st_fragments": 49091.0,
+                "last_fragments": 49091.0,
+                "reads_mapped": 98182.0,
+                "reads_mapped_and_paired": 98182.0,
+                "reads_unmapped": 0.0,
+                "reads_properly_paired": 98182.0,
+                "reads_paired": 98182.0,
+                "reads_duplicated": 0.0,
+                "reads_MQ0": 44.0,
+                "reads_QC_failed": 0.0,
+                "non-primary_alignments": 2120.0,
+                "supplementary_alignments": 0.0,
+                "total_length": 7363650.0,
+                "total_first_fragment_length": 3681825.0,
+                "total_last_fragment_length": 3681825.0,
+                "bases_mapped": 7363650.0,
+                "bases_mapped_(cigar)": 7324692.0,
+                "bases_trimmed": 0.0,
+                "bases_duplicated": 0.0,
+                "mismatches": 39573.0,
+                "error_rate": 0.005402685,
+                "average_length": 75.0,
+                "average_first_fragment_length": 75.0,
+                "average_last_fragment_length": 75.0,
+                "maximum_length": 75.0,
+                "maximum_first_fragment_length": 75.0,
+                "maximum_last_fragment_length": 75.0,
+                "average_quality": 35.9,
+                "insert_size_average": 1061.3,
+                "insert_size_standard_deviation": 1840.3,
+                "inward_oriented_pairs": 49079.0,
+                "outward_oriented_pairs": 12.0,
+                "pairs_with_other_orientation": 0.0,
+                "pairs_on_different_chromosomes": 0.0,
+                "percentage_of_properly_paired_reads_(%)": 100.0,
+                "reads_mapped_percent": 100.0,
+                "reads_mapped_and_paired_percent": 100.0,
+                "reads_unmapped_percent": 0.0,
+                "reads_properly_paired_percent": 100.0,
+                "reads_paired_percent": 100.0,
+                "reads_duplicated_percent": 0.0,
+                "reads_MQ0_percent": 0.04481473182457069,
+                "reads_QC_failed_percent": 0.0
+            },
+            "ERR188428": {
+                "raw_total_sequences": 98292.0,
+                "filtered_sequences": 0.0,
+                "sequences": 98292.0,
+                "is_sorted": 1.0,
+                "1st_fragments": 49146.0,
+                "last_fragments": 49146.0,
+                "reads_mapped": 98292.0,
+                "reads_mapped_and_paired": 98292.0,
+                "reads_unmapped": 0.0,
+                "reads_properly_paired": 98292.0,
+                "reads_paired": 98292.0,
+                "reads_duplicated": 0.0,
+                "reads_MQ0": 44.0,
+                "reads_QC_failed": 0.0,
+                "non-primary_alignments": 1958.0,
+                "supplementary_alignments": 0.0,
+                "total_length": 7371900.0,
+                "total_first_fragment_length": 3685950.0,
+                "total_last_fragment_length": 3685950.0,
+                "bases_mapped": 7371900.0,
+                "bases_mapped_(cigar)": 7331541.0,
+                "bases_trimmed": 0.0,
+                "bases_duplicated": 0.0,
+                "mismatches": 34517.0,
+                "error_rate": 0.004708014,
+                "average_length": 75.0,
+                "average_first_fragment_length": 75.0,
+                "average_last_fragment_length": 75.0,
+                "maximum_length": 75.0,
+                "maximum_first_fragment_length": 75.0,
+                "maximum_last_fragment_length": 75.0,
+                "average_quality": 36.6,
+                "insert_size_average": 1109.7,
+                "insert_size_standard_deviation": 1876.0,
+                "inward_oriented_pairs": 49134.0,
+                "outward_oriented_pairs": 12.0,
+                "pairs_with_other_orientation": 0.0,
+                "pairs_on_different_chromosomes": 0.0,
+                "percentage_of_properly_paired_reads_(%)": 100.0,
+                "reads_mapped_percent": 100.0,
+                "reads_mapped_and_paired_percent": 100.0,
+                "reads_unmapped_percent": 0.0,
+                "reads_properly_paired_percent": 100.0,
+                "reads_paired_percent": 100.0,
+                "reads_duplicated_percent": 0.0,
+                "reads_MQ0_percent": 0.044764579009481956,
+                "reads_QC_failed_percent": 0.0
+            }
+        },
+        "multiqc_samtools_flagstat": {
+            "ERR188454": {
+                "total_passed": 101160,
+                "total_failed": 0,
+                "secondary_passed": 2360,
+                "secondary_failed": 0,
+                "supplementary_passed": 0,
+                "supplementary_failed": 0,
+                "duplicates_passed": 0,
+                "duplicates_failed": 0,
+                "mapped_passed": 101160,
+                "mapped_failed": 0,
+                "mapped_passed_pct": 100.0,
+                "mapped_failed_pct": NaN,
+                "paired in sequencing_passed": 98800,
+                "paired in sequencing_failed": 0,
+                "read1_passed": 49400,
+                "read1_failed": 0,
+                "read2_passed": 49400,
+                "read2_failed": 0,
+                "properly paired_passed": 98800,
+                "properly paired_failed": 0,
+                "properly paired_passed_pct": 100.0,
+                "properly paired_failed_pct": NaN,
+                "with itself and mate mapped_passed": 98800,
+                "with itself and mate mapped_failed": 0,
+                "singletons_passed": 0,
+                "singletons_failed": 0,
+                "singletons_passed_pct": 0.0,
+                "singletons_failed_pct": NaN,
+                "with mate mapped to a different chr_passed": 0,
+                "with mate mapped to a different chr_failed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_passed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_failed": 0,
+                "flagstat_total": 101160
+            },
+            "ERR204916": {
+                "total_passed": 100302,
+                "total_failed": 0,
+                "secondary_passed": 2120,
+                "secondary_failed": 0,
+                "supplementary_passed": 0,
+                "supplementary_failed": 0,
+                "duplicates_passed": 0,
+                "duplicates_failed": 0,
+                "mapped_passed": 100302,
+                "mapped_failed": 0,
+                "mapped_passed_pct": 100.0,
+                "mapped_failed_pct": NaN,
+                "paired in sequencing_passed": 98182,
+                "paired in sequencing_failed": 0,
+                "read1_passed": 49091,
+                "read1_failed": 0,
+                "read2_passed": 49091,
+                "read2_failed": 0,
+                "properly paired_passed": 98182,
+                "properly paired_failed": 0,
+                "properly paired_passed_pct": 100.0,
+                "properly paired_failed_pct": NaN,
+                "with itself and mate mapped_passed": 98182,
+                "with itself and mate mapped_failed": 0,
+                "singletons_passed": 0,
+                "singletons_failed": 0,
+                "singletons_passed_pct": 0.0,
+                "singletons_failed_pct": NaN,
+                "with mate mapped to a different chr_passed": 0,
+                "with mate mapped to a different chr_failed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_passed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_failed": 0,
+                "flagstat_total": 100302
+            },
+            "ERR188383": {
+                "total_passed": 100826,
+                "total_failed": 0,
+                "secondary_passed": 2094,
+                "secondary_failed": 0,
+                "supplementary_passed": 0,
+                "supplementary_failed": 0,
+                "duplicates_passed": 0,
+                "duplicates_failed": 0,
+                "mapped_passed": 100826,
+                "mapped_failed": 0,
+                "mapped_passed_pct": 100.0,
+                "mapped_failed_pct": NaN,
+                "paired in sequencing_passed": 98732,
+                "paired in sequencing_failed": 0,
+                "read1_passed": 49366,
+                "read1_failed": 0,
+                "read2_passed": 49366,
+                "read2_failed": 0,
+                "properly paired_passed": 98732,
+                "properly paired_failed": 0,
+                "properly paired_passed_pct": 100.0,
+                "properly paired_failed_pct": NaN,
+                "with itself and mate mapped_passed": 98732,
+                "with itself and mate mapped_failed": 0,
+                "singletons_passed": 0,
+                "singletons_failed": 0,
+                "singletons_passed_pct": 0.0,
+                "singletons_failed_pct": NaN,
+                "with mate mapped to a different chr_passed": 0,
+                "with mate mapped to a different chr_failed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_passed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_failed": 0,
+                "flagstat_total": 100826
+            },
+            "ERR188428": {
+                "total_passed": 100250,
+                "total_failed": 0,
+                "secondary_passed": 1958,
+                "secondary_failed": 0,
+                "supplementary_passed": 0,
+                "supplementary_failed": 0,
+                "duplicates_passed": 0,
+                "duplicates_failed": 0,
+                "mapped_passed": 100250,
+                "mapped_failed": 0,
+                "mapped_passed_pct": 100.0,
+                "mapped_failed_pct": NaN,
+                "paired in sequencing_passed": 98292,
+                "paired in sequencing_failed": 0,
+                "read1_passed": 49146,
+                "read1_failed": 0,
+                "read2_passed": 49146,
+                "read2_failed": 0,
+                "properly paired_passed": 98292,
+                "properly paired_failed": 0,
+                "properly paired_passed_pct": 100.0,
+                "properly paired_failed_pct": NaN,
+                "with itself and mate mapped_passed": 98292,
+                "with itself and mate mapped_failed": 0,
+                "singletons_passed": 0,
+                "singletons_failed": 0,
+                "singletons_passed_pct": 0.0,
+                "singletons_failed_pct": NaN,
+                "with mate mapped to a different chr_passed": 0,
+                "with mate mapped to a different chr_failed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_passed": 0,
+                "with mate mapped to a different chr (mapQ >= 5)_failed": 0,
+                "flagstat_total": 100250
+            }
+        },
+        "multiqc_samtools_idxstats": {
+            "ERR188454": {
+                "X": [
+                    101160,
+                    155270560
+                ],
+                "*": [
+                    0,
+                    0
+                ]
+            },
+            "ERR204916": {
+                "X": [
+                    100302,
+                    155270560
+                ],
+                "*": [
+                    0,
+                    0
+                ]
+            },
+            "ERR188428": {
+                "X": [
+                    100250,
+                    155270560
+                ],
+                "*": [
+                    0,
+                    0
+                ]
+            },
+            "ERR188383": {
+                "X": [
+                    100826,
+                    155270560
+                ],
+                "*": [
+                    0,
+                    0
+                ]
+            }
+        },
+        "multiqc_general_stats": {
+            "ERR204916": {
+                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 91.8845087834739,
+                "featureCounts_mqc-generalstats-featurecounts-Assigned": 46081,
+                "Samtools_mqc-generalstats-samtools-error_rate": 0.005402685,
+                "Samtools_mqc-generalstats-samtools-non_primary_alignments": 2120.0,
+                "Samtools_mqc-generalstats-samtools-reads_mapped": 98182.0,
+                "Samtools_mqc-generalstats-samtools-reads_mapped_percent": 100.0,
+                "Samtools_mqc-generalstats-samtools-reads_properly_paired_percent": 100.0,
+                "Samtools_mqc-generalstats-samtools-reads_MQ0_percent": 0.04481473182457069,
+                "Samtools_mqc-generalstats-samtools-raw_total_sequences": 98182.0,
+                "Samtools_mqc-generalstats-samtools-flagstat_total": 100302,
+                "Samtools_mqc-generalstats-samtools-mapped_passed": 100302,
+                "Samtools_mqc-generalstats-samtools-mapped_passed_pct": 100.0
+            },
+            "ERR188428": {
+                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.20947630922693,
+                "featureCounts_mqc-generalstats-featurecounts-Assigned": 46220,
+                "Samtools_mqc-generalstats-samtools-error_rate": 0.004708014,
+                "Samtools_mqc-generalstats-samtools-non_primary_alignments": 1958.0,
+                "Samtools_mqc-generalstats-samtools-reads_mapped": 98292.0,
+                "Samtools_mqc-generalstats-samtools-reads_mapped_percent": 100.0,
+                "Samtools_mqc-generalstats-samtools-reads_properly_paired_percent": 100.0,
+                "Samtools_mqc-generalstats-samtools-reads_MQ0_percent": 0.044764579009481956,
+                "Samtools_mqc-generalstats-samtools-raw_total_sequences": 98292.0,
+                "Samtools_mqc-generalstats-samtools-flagstat_total": 100250,
+                "Samtools_mqc-generalstats-samtools-mapped_passed": 100250,
+                "Samtools_mqc-generalstats-samtools-mapped_passed_pct": 100.0
+            },
+            "ERR188454": {
+                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 91.24159746935547,
+                "featureCounts_mqc-generalstats-featurecounts-Assigned": 46150,
+                "Samtools_mqc-generalstats-samtools-error_rate": 0.004516713,
+                "Samtools_mqc-generalstats-samtools-non_primary_alignments": 2360.0,
+                "Samtools_mqc-generalstats-samtools-reads_mapped": 98800.0,
+                "Samtools_mqc-generalstats-samtools-reads_mapped_percent": 100.0,
+                "Samtools_mqc-generalstats-samtools-reads_properly_paired_percent": 100.0,
+                "Samtools_mqc-generalstats-samtools-reads_MQ0_percent": 0.04251012145748988,
+                "Samtools_mqc-generalstats-samtools-raw_total_sequences": 98800.0,
+                "Samtools_mqc-generalstats-samtools-flagstat_total": 101160,
+                "Samtools_mqc-generalstats-samtools-mapped_passed": 101160,
+                "Samtools_mqc-generalstats-samtools-mapped_passed_pct": 100.0
+            },
+            "ERR188383": {
+                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.70029555868527,
+                "featureCounts_mqc-generalstats-featurecounts-Assigned": 46733,
+                "Samtools_mqc-generalstats-samtools-error_rate": 0.004190944,
+                "Samtools_mqc-generalstats-samtools-non_primary_alignments": 2094.0,
+                "Samtools_mqc-generalstats-samtools-reads_mapped": 98732.0,
+                "Samtools_mqc-generalstats-samtools-reads_mapped_percent": 100.0,
+                "Samtools_mqc-generalstats-samtools-reads_properly_paired_percent": 100.0,
+                "Samtools_mqc-generalstats-samtools-reads_MQ0_percent": 0.04659077097597537,
+                "Samtools_mqc-generalstats-samtools-raw_total_sequences": 98732.0,
+                "Samtools_mqc-generalstats-samtools-flagstat_total": 100826,
+                "Samtools_mqc-generalstats-samtools-mapped_passed": 100826,
+                "Samtools_mqc-generalstats-samtools-mapped_passed_pct": 100.0
+            }
+        }
+    },
+    "config_analysis_dir_abs": [
+        "/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd"
+    ],
+    "config_analysis_dir": [
+        "."
+    ],
+    "config_creation_date": "2023-03-21, 19:08 UTC",
+    "config_git_hash": null,
+    "config_intro_text": null,
+    "config_report_comment": "This report has been generated by the <a href=\"https://github.com/nf-core/rnasplice\" target=\"_blank\">nf-core/rnasplice</a> analysis pipeline. For information about how to interpret these results, please see the <a href=\"https://nf-co.re/rnasplice\" target=\"_blank\">documentation</a>.\n",
+    "config_report_header_info": null,
+    "config_script_path": "/usr/local/lib/python3.11/site-packages/multiqc/utils",
+    "config_short_version": "1.14",
+    "config_subtitle": null,
+    "config_title": null,
+    "config_version": "1.14"
+}

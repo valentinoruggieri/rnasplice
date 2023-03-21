@@ -1,0 +1,474 @@
+<!--
+  ~ Copyright 2013-2019, Centre for Genomic Regulation (CRG)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html>
+
+    <head>
+        <title>Nextflow Cytoscape.js with Dagre</title>
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+        <script type="text/javascript">
+        var prot = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cscript src='" + prot + "code.jquery.com/jquery-2.0.3.min.js' type='text/javascript' %3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='" + prot + "cdnjs.cloudflare.com/ajax/libs/cytoscape/2.6.12/cytoscape.min.js' type='text/javascript' %3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='" + prot + "cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js' type='text/javascript' %3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='" + prot + "cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.1.2/cytoscape-dagre.js' type='text/javascript' %3E%3C/script%3E"));
+        </script>
+
+        <style>
+            body {
+                font-family: helvetica;
+                font-size: 14px;
+            }
+
+            #cy {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 999;
+            }
+
+            h1 {
+                opacity: 0.5;
+                font-size: 1em;
+            }
+        </style>
+
+        <script>
+            $(function(){
+                var cy = window.cy = cytoscape({
+                    container: document.getElementById('cy'),
+                    boxSelectionEnabled: false,
+                    autounselectify: true,
+
+                    layout: {
+                        name: 'dagre'
+                    },
+
+                    style: cytoscape.stylesheet()
+                        .selector( 'node')
+                            .css({
+                                'width': 10,
+                                'height': 10,
+                                'content': 'data(label)',
+                                'text-valign': 'center',
+                                'text-halign': 'center',
+                                'text-opacity': 0.5,
+                            })
+                        .selector('node.PROCESS')
+                            .css({
+                                'width': 100,
+                                'height': 50,
+                                'text-opacity': 0.9,
+                                'background-color': '#009911'
+                            })
+                        .selector('node.OPERATOR')
+                            .css({
+                                'background-color': '#11479e',
+                                'text-halign': 'right',
+                            })
+                        .selector('node.ORIGIN')
+                            .css({
+                                'background-color': '#999999',
+                                'text-halign': 'right',
+                            })
+                        .selector('node.TERMINATION')
+                            .css({
+                                'background-color': '#999999',
+                                'text-halign': 'right',
+                            })
+                        .selector('edge')
+                            .css({
+                                'content': 'data(label)',
+                                'text-opacity': 0.5,
+                                'width': 4,
+                                'target-arrow-shape': 'triangle',
+                                'line-color': '#9dbaea',
+                                'target-arrow-color': '#9dbaea'
+                            }),
+
+elements: {
+nodes: [
+{ data: { id: 'p0', label: 'Channel.fromPath'}, classes: 'ORIGIN' },
+{ data: { id: 'p1', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p2', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p3', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p4', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p5'}, classes: 'ORIGIN' },
+{ data: { id: 'p6', label: 'NFCORE_RNASPLICE:RNASPLICE:PREPARE_GENOME:GUNZIP_FASTA'}, classes: 'PROCESS' },
+{ data: { id: 'p7', label: 'map'}, classes: 'OPERATOR' },
+{ data: { id: 'p8', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p9'}, classes: 'ORIGIN' },
+{ data: { id: 'p10', label: 'NFCORE_RNASPLICE:RNASPLICE:PREPARE_GENOME:GTF_GENE_FILTER'}, classes: 'PROCESS' },
+{ data: { id: 'p11', label: 'NFCORE_RNASPLICE:RNASPLICE:PREPARE_GENOME:MAKE_TRANSCRIPTS_FASTA'}, classes: 'PROCESS' },
+{ data: { id: 'p12'}, classes: 'NODE' },
+{ data: { id: 'p13', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p14', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p15', label: 'map'}, classes: 'OPERATOR' },
+{ data: { id: 'p16', label: 'NFCORE_RNASPLICE:RNASPLICE:PREPARE_GENOME:CUSTOM_GETCHROMSIZES'}, classes: 'PROCESS' },
+{ data: { id: 'p17'}, classes: 'NODE' },
+{ data: { id: 'p18', label: 'map'}, classes: 'OPERATOR' },
+{ data: { id: 'p19'}, classes: 'NODE' },
+{ data: { id: 'p20', label: 'map'}, classes: 'OPERATOR' },
+{ data: { id: 'p21', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p22', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p23'}, classes: 'NODE' },
+{ data: { id: 'p24', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p25'}, classes: 'NODE' },
+{ data: { id: 'p26', label: 'NFCORE_RNASPLICE:RNASPLICE:PREPARE_GENOME:SALMON_INDEX'}, classes: 'PROCESS' },
+{ data: { id: 'p27'}, classes: 'NODE' },
+{ data: { id: 'p28', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p29', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p30'}, classes: 'NODE' },
+{ data: { id: 'p31', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p32'}, classes: 'NODE' },
+{ data: { id: 'p33', label: 'ifEmpty'}, classes: 'OPERATOR' },
+{ data: { id: 'p34'}, classes: 'NODE' },
+{ data: { id: 'p35'}, classes: 'ORIGIN' },
+{ data: { id: 'p36', label: 'NFCORE_RNASPLICE:RNASPLICE:INPUT_CHECK_BAM:SAMPLESHEET_CHECK'}, classes: 'PROCESS' },
+{ data: { id: 'p37', label: 'splitCsv'}, classes: 'OPERATOR' },
+{ data: { id: 'p38', label: 'map'}, classes: 'OPERATOR' },
+{ data: { id: 'p39', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p40'}, classes: 'ORIGIN' },
+{ data: { id: 'p41', label: 'NFCORE_RNASPLICE:RNASPLICE:INPUT_CHECK_TRANSCRIPTOME:SAMPLESHEET_CHECK'}, classes: 'PROCESS' },
+{ data: { id: 'p42', label: 'splitCsv'}, classes: 'OPERATOR' },
+{ data: { id: 'p43', label: 'map'}, classes: 'OPERATOR' },
+{ data: { id: 'p44'}, classes: 'NODE' },
+{ data: { id: 'p45', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p46'}, classes: 'ORIGIN' },
+{ data: { id: 'p47', label: 'NFCORE_RNASPLICE:RNASPLICE:SAMPLESHEET_CHECK'}, classes: 'PROCESS' },
+{ data: { id: 'p48'}, classes: 'NODE' },
+{ data: { id: 'p49'}, classes: 'NODE' },
+{ data: { id: 'p50', label: 'Channel.fromPath'}, classes: 'ORIGIN' },
+{ data: { id: 'p51', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p52'}, classes: 'NODE' },
+{ data: { id: 'p53', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p54'}, classes: 'NODE' },
+{ data: { id: 'p55', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p56'}, classes: 'NODE' },
+{ data: { id: 'p57', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p58'}, classes: 'NODE' },
+{ data: { id: 'p59', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p60'}, classes: 'NODE' },
+{ data: { id: 'p61', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p62'}, classes: 'NODE' },
+{ data: { id: 'p63', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p64'}, classes: 'NODE' },
+{ data: { id: 'p65', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p66'}, classes: 'NODE' },
+{ data: { id: 'p67', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p68', label: 'NFCORE_RNASPLICE:RNASPLICE:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT'}, classes: 'PROCESS' },
+{ data: { id: 'p69'}, classes: 'NODE' },
+{ data: { id: 'p70', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p71', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p72', label: 'NFCORE_RNASPLICE:RNASPLICE:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX'}, classes: 'PROCESS' },
+{ data: { id: 'p73'}, classes: 'NODE' },
+{ data: { id: 'p74', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p75', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p76', label: 'join'}, classes: 'OPERATOR' },
+{ data: { id: 'p77', label: 'join'}, classes: 'OPERATOR' },
+{ data: { id: 'p78', label: 'map'}, classes: 'OPERATOR' },
+{ data: { id: 'p79', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p80'}, classes: 'ORIGIN' },
+{ data: { id: 'p81', label: 'NFCORE_RNASPLICE:RNASPLICE:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS'}, classes: 'PROCESS' },
+{ data: { id: 'p82', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p83', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p84', label: 'NFCORE_RNASPLICE:RNASPLICE:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT'}, classes: 'PROCESS' },
+{ data: { id: 'p85', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p86', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p87', label: 'NFCORE_RNASPLICE:RNASPLICE:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS'}, classes: 'PROCESS' },
+{ data: { id: 'p88', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p89', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p90', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p91', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p92', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p93', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p94', label: 'NFCORE_RNASPLICE:RNASPLICE:EDGER_DEU:SUBREAD_FLATTENGTF'}, classes: 'PROCESS' },
+{ data: { id: 'p95'}, classes: 'NODE' },
+{ data: { id: 'p96', label: 'combine'}, classes: 'OPERATOR' },
+{ data: { id: 'p97', label: 'NFCORE_RNASPLICE:RNASPLICE:EDGER_DEU:SUBREAD_FEATURECOUNTS'}, classes: 'PROCESS' },
+{ data: { id: 'p98', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p99', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p100', label: 'collect'}, classes: 'OPERATOR' },
+{ data: { id: 'p101', label: 'NFCORE_RNASPLICE:RNASPLICE:EDGER_DEU:EDGER_EXON'}, classes: 'PROCESS' },
+{ data: { id: 'p102'}, classes: 'NODE' },
+{ data: { id: 'p103'}, classes: 'NODE' },
+{ data: { id: 'p104'}, classes: 'NODE' },
+{ data: { id: 'p105'}, classes: 'NODE' },
+{ data: { id: 'p106'}, classes: 'NODE' },
+{ data: { id: 'p107', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p108', label: 'NFCORE_RNASPLICE:RNASPLICE:BEDTOOLS_GENOMECOV'}, classes: 'PROCESS' },
+{ data: { id: 'p109', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p110', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p111', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p112', label: 'NFCORE_RNASPLICE:RNASPLICE:BEDGRAPH_TO_BIGWIG_FORWARD:UCSC_BEDCLIP'}, classes: 'PROCESS' },
+{ data: { id: 'p113', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p114', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p115', label: 'NFCORE_RNASPLICE:RNASPLICE:BEDGRAPH_TO_BIGWIG_FORWARD:UCSC_BEDGRAPHTOBIGWIG'}, classes: 'PROCESS' },
+{ data: { id: 'p116'}, classes: 'NODE' },
+{ data: { id: 'p117', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p118', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p119', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p120', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p121', label: 'NFCORE_RNASPLICE:RNASPLICE:BEDGRAPH_TO_BIGWIG_REVERSE:UCSC_BEDCLIP'}, classes: 'PROCESS' },
+{ data: { id: 'p122', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p123', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p124', label: 'NFCORE_RNASPLICE:RNASPLICE:BEDGRAPH_TO_BIGWIG_REVERSE:UCSC_BEDGRAPHTOBIGWIG'}, classes: 'PROCESS' },
+{ data: { id: 'p125'}, classes: 'NODE' },
+{ data: { id: 'p126', label: 'first'}, classes: 'OPERATOR' },
+{ data: { id: 'p127', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p128'}, classes: 'NODE' },
+{ data: { id: 'p129', label: 'unique'}, classes: 'OPERATOR' },
+{ data: { id: 'p130', label: 'collectFile'}, classes: 'OPERATOR' },
+{ data: { id: 'p131', label: 'NFCORE_RNASPLICE:RNASPLICE:CUSTOM_DUMPSOFTWAREVERSIONS'}, classes: 'PROCESS' },
+{ data: { id: 'p132'}, classes: 'NODE' },
+{ data: { id: 'p133'}, classes: 'NODE' },
+{ data: { id: 'p134', label: 'Channel.empty'}, classes: 'ORIGIN' },
+{ data: { id: 'p135', label: 'collect'}, classes: 'OPERATOR' },
+{ data: { id: 'p136', label: 'ifEmpty'}, classes: 'OPERATOR' },
+{ data: { id: 'p137', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p138'}, classes: 'ORIGIN' },
+{ data: { id: 'p139', label: 'collectFile'}, classes: 'OPERATOR' },
+{ data: { id: 'p140', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p141'}, classes: 'ORIGIN' },
+{ data: { id: 'p142', label: 'collectFile'}, classes: 'OPERATOR' },
+{ data: { id: 'p143', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p144', label: 'collect'}, classes: 'OPERATOR' },
+{ data: { id: 'p145', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p146', label: 'collect'}, classes: 'OPERATOR' },
+{ data: { id: 'p147', label: 'ifEmpty'}, classes: 'OPERATOR' },
+{ data: { id: 'p148', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p149', label: 'collect'}, classes: 'OPERATOR' },
+{ data: { id: 'p150', label: 'ifEmpty'}, classes: 'OPERATOR' },
+{ data: { id: 'p151', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p152', label: 'collect'}, classes: 'OPERATOR' },
+{ data: { id: 'p153', label: 'ifEmpty'}, classes: 'OPERATOR' },
+{ data: { id: 'p154', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p155', label: 'collect'}, classes: 'OPERATOR' },
+{ data: { id: 'p156', label: 'ifEmpty'}, classes: 'OPERATOR' },
+{ data: { id: 'p157', label: 'mix'}, classes: 'OPERATOR' },
+{ data: { id: 'p158', label: 'collect'}, classes: 'OPERATOR' },
+{ data: { id: 'p159', label: 'toList'}, classes: 'OPERATOR' },
+{ data: { id: 'p160', label: 'toList'}, classes: 'OPERATOR' },
+{ data: { id: 'p161', label: 'toList'}, classes: 'OPERATOR' },
+{ data: { id: 'p162', label: 'NFCORE_RNASPLICE:RNASPLICE:MULTIQC'}, classes: 'PROCESS' },
+{ data: { id: 'p163'}, classes: 'NODE' },
+{ data: { id: 'p164'}, classes: 'NODE' },
+{ data: { id: 'p165'}, classes: 'NODE' },
+{ data: { id: 'p166', label: 'toList'}, classes: 'OPERATOR' },
+{ data: { id: 'p167'}, classes: 'NODE' },
+],
+edges: [
+{ data: { source: 'p0', target: 'p159', label: 'ch_multiqc_config' } },
+{ data: { source: 'p1', target: 'p135', label: 'ch_multiqc_custom_config' } },
+{ data: { source: 'p2', target: 'p161', label: 'ch_multiqc_logo' } },
+{ data: { source: 'p3', target: 'p39', label: 'ch_versions' } },
+{ data: { source: 'p4', target: 'p8', label: 'ch_versions' } },
+{ data: { source: 'p5', target: 'p6'} },
+{ data: { source: 'p6', target: 'p7'} },
+{ data: { source: 'p6', target: 'p8'} },
+{ data: { source: 'p7', target: 'p10', label: 'fasta' } },
+{ data: { source: 'p8', target: 'p13', label: 'ch_versions' } },
+{ data: { source: 'p9', target: 'p10', label: 'gtf' } },
+{ data: { source: 'p10', target: 'p11', label: 'ch_filter_gtf' } },
+{ data: { source: 'p10', target: 'p13'} },
+{ data: { source: 'p7', target: 'p11', label: 'fasta' } },
+{ data: { source: 'p11', target: 'p12'} },
+{ data: { source: 'p11', target: 'p26', label: 'transcript_fasta' } },
+{ data: { source: 'p11', target: 'p14'} },
+{ data: { source: 'p13', target: 'p14', label: 'ch_versions' } },
+{ data: { source: 'p14', target: 'p21', label: 'ch_versions' } },
+{ data: { source: 'p7', target: 'p15', label: 'fasta' } },
+{ data: { source: 'p15', target: 'p16'} },
+{ data: { source: 'p16', target: 'p20'} },
+{ data: { source: 'p16', target: 'p18'} },
+{ data: { source: 'p16', target: 'p17'} },
+{ data: { source: 'p16', target: 'p21'} },
+{ data: { source: 'p18', target: 'p19', label: 'fai' } },
+{ data: { source: 'p20', target: 'p112', label: 'sizes' } },
+{ data: { source: 'p21', target: 'p28', label: 'ch_versions' } },
+{ data: { source: 'p22', target: 'p23', label: 'star_index' } },
+{ data: { source: 'p24', target: 'p25', label: 'ch_salmon_index' } },
+{ data: { source: 'p7', target: 'p26', label: 'fasta' } },
+{ data: { source: 'p26', target: 'p27', label: 'salmon_index' } },
+{ data: { source: 'p26', target: 'p28'} },
+{ data: { source: 'p28', target: 'p33', label: 'ch_versions' } },
+{ data: { source: 'p29', target: 'p30', label: 'dexseq_gff' } },
+{ data: { source: 'p31', target: 'p32', label: 'suppa_tpm' } },
+{ data: { source: 'p33', target: 'p34', label: 'versions' } },
+{ data: { source: 'p35', target: 'p36', label: 'samplesheet' } },
+{ data: { source: 'p36', target: 'p37'} },
+{ data: { source: 'p36', target: 'p39', label: 'versions' } },
+{ data: { source: 'p37', target: 'p38'} },
+{ data: { source: 'p38', target: 'p68', label: 'ch_bam' } },
+{ data: { source: 'p39', target: 'p45', label: 'ch_versions' } },
+{ data: { source: 'p40', target: 'p41', label: 'samplesheet' } },
+{ data: { source: 'p41', target: 'p42'} },
+{ data: { source: 'p41', target: 'p45', label: 'versions' } },
+{ data: { source: 'p42', target: 'p43'} },
+{ data: { source: 'p43', target: 'p44', label: 'ch_transcriptome_bam' } },
+{ data: { source: 'p45', target: 'p91', label: 'ch_versions' } },
+{ data: { source: 'p46', target: 'p47', label: 'samplesheet' } },
+{ data: { source: 'p47', target: 'p49', label: 'ch_samplesheet' } },
+{ data: { source: 'p47', target: 'p48'} },
+{ data: { source: 'p50', target: 'p101', label: 'ch_samplesheet' } },
+{ data: { source: 'p51', target: 'p52', label: 'ch_genome_bam' } },
+{ data: { source: 'p53', target: 'p54', label: 'ch_genome_bam_index' } },
+{ data: { source: 'p55', target: 'p56', label: 'ch_samtools_stats' } },
+{ data: { source: 'p57', target: 'p58', label: 'ch_samtools_flagstat' } },
+{ data: { source: 'p59', target: 'p60', label: 'ch_samtools_idxstats' } },
+{ data: { source: 'p61', target: 'p62', label: 'ch_star_multiqc' } },
+{ data: { source: 'p63', target: 'p64', label: 'ch_aligner_pca_multiqc' } },
+{ data: { source: 'p65', target: 'p66', label: 'ch_aligner_clustering_multiqc' } },
+{ data: { source: 'p67', target: 'p71', label: 'ch_versions' } },
+{ data: { source: 'p68', target: 'p72', label: 'ch_genome_bam' } },
+{ data: { source: 'p68', target: 'p69'} },
+{ data: { source: 'p68', target: 'p70'} },
+{ data: { source: 'p70', target: 'p71'} },
+{ data: { source: 'p71', target: 'p75', label: 'ch_versions' } },
+{ data: { source: 'p72', target: 'p76', label: 'ch_genome_bam_index' } },
+{ data: { source: 'p72', target: 'p77', label: 'csi' } },
+{ data: { source: 'p72', target: 'p73'} },
+{ data: { source: 'p72', target: 'p74'} },
+{ data: { source: 'p74', target: 'p75'} },
+{ data: { source: 'p75', target: 'p90', label: 'ch_versions' } },
+{ data: { source: 'p68', target: 'p76', label: 'ch_genome_bam' } },
+{ data: { source: 'p76', target: 'p77'} },
+{ data: { source: 'p77', target: 'p78'} },
+{ data: { source: 'p78', target: 'p81', label: 'ch_bam_bai' } },
+{ data: { source: 'p79', target: 'p83', label: 'ch_versions' } },
+{ data: { source: 'p80', target: 'p81', label: 'fasta' } },
+{ data: { source: 'p81', target: 'p146', label: 'ch_samtools_stats' } },
+{ data: { source: 'p81', target: 'p82'} },
+{ data: { source: 'p82', target: 'p83'} },
+{ data: { source: 'p83', target: 'p86', label: 'ch_versions' } },
+{ data: { source: 'p78', target: 'p84', label: 'ch_bam_bai' } },
+{ data: { source: 'p84', target: 'p149', label: 'ch_samtools_flagstat' } },
+{ data: { source: 'p84', target: 'p85'} },
+{ data: { source: 'p85', target: 'p86'} },
+{ data: { source: 'p86', target: 'p89', label: 'ch_versions' } },
+{ data: { source: 'p78', target: 'p87', label: 'ch_bam_bai' } },
+{ data: { source: 'p87', target: 'p152', label: 'ch_samtools_idxstats' } },
+{ data: { source: 'p87', target: 'p88'} },
+{ data: { source: 'p88', target: 'p89'} },
+{ data: { source: 'p89', target: 'p90', label: 'versions' } },
+{ data: { source: 'p90', target: 'p91', label: 'versions' } },
+{ data: { source: 'p91', target: 'p92', label: 'ch_versions' } },
+{ data: { source: 'p90', target: 'p92', label: 'versions' } },
+{ data: { source: 'p92', target: 'p107', label: 'ch_versions' } },
+{ data: { source: 'p93', target: 'p99', label: 'ch_versions' } },
+{ data: { source: 'p9', target: 'p94', label: 'gtf' } },
+{ data: { source: 'p94', target: 'p96'} },
+{ data: { source: 'p94', target: 'p95'} },
+{ data: { source: 'p68', target: 'p96', label: 'ch_genome_bam' } },
+{ data: { source: 'p96', target: 'p97', label: 'ch_feature_counts' } },
+{ data: { source: 'p97', target: 'p100'} },
+{ data: { source: 'p97', target: 'p155', label: 'featureCounts_summary' } },
+{ data: { source: 'p97', target: 'p98'} },
+{ data: { source: 'p98', target: 'p99'} },
+{ data: { source: 'p99', target: 'p107', label: 'versions' } },
+{ data: { source: 'p100', target: 'p101'} },
+{ data: { source: 'p101', target: 'p106'} },
+{ data: { source: 'p101', target: 'p105'} },
+{ data: { source: 'p101', target: 'p104'} },
+{ data: { source: 'p101', target: 'p103'} },
+{ data: { source: 'p101', target: 'p102'} },
+{ data: { source: 'p107', target: 'p110', label: 'ch_versions' } },
+{ data: { source: 'p68', target: 'p108', label: 'ch_genome_bam' } },
+{ data: { source: 'p108', target: 'p112', label: 'bedgraph' } },
+{ data: { source: 'p108', target: 'p121', label: 'bedgraph' } },
+{ data: { source: 'p108', target: 'p109'} },
+{ data: { source: 'p109', target: 'p110'} },
+{ data: { source: 'p110', target: 'p119', label: 'ch_versions' } },
+{ data: { source: 'p111', target: 'p114', label: 'ch_versions' } },
+{ data: { source: 'p112', target: 'p115', label: 'bedgraph' } },
+{ data: { source: 'p112', target: 'p113'} },
+{ data: { source: 'p113', target: 'p114'} },
+{ data: { source: 'p114', target: 'p118', label: 'ch_versions' } },
+{ data: { source: 'p20', target: 'p115', label: 'sizes' } },
+{ data: { source: 'p115', target: 'p116', label: 'bigwig' } },
+{ data: { source: 'p115', target: 'p117'} },
+{ data: { source: 'p117', target: 'p118'} },
+{ data: { source: 'p118', target: 'p119', label: 'versions' } },
+{ data: { source: 'p119', target: 'p129', label: 'ch_versions' } },
+{ data: { source: 'p120', target: 'p123', label: 'ch_versions' } },
+{ data: { source: 'p20', target: 'p121', label: 'sizes' } },
+{ data: { source: 'p121', target: 'p124', label: 'bedgraph' } },
+{ data: { source: 'p121', target: 'p122'} },
+{ data: { source: 'p122', target: 'p123'} },
+{ data: { source: 'p123', target: 'p127', label: 'ch_versions' } },
+{ data: { source: 'p20', target: 'p124', label: 'sizes' } },
+{ data: { source: 'p124', target: 'p125', label: 'bigwig' } },
+{ data: { source: 'p124', target: 'p126'} },
+{ data: { source: 'p126', target: 'p127'} },
+{ data: { source: 'p127', target: 'p128', label: 'versions' } },
+{ data: { source: 'p129', target: 'p130'} },
+{ data: { source: 'p130', target: 'p131'} },
+{ data: { source: 'p131', target: 'p133'} },
+{ data: { source: 'p131', target: 'p144'} },
+{ data: { source: 'p131', target: 'p132'} },
+{ data: { source: 'p134', target: 'p137', label: 'ch_multiqc_files' } },
+{ data: { source: 'p135', target: 'p136'} },
+{ data: { source: 'p136', target: 'p137'} },
+{ data: { source: 'p137', target: 'p140', label: 'ch_multiqc_files' } },
+{ data: { source: 'p138', target: 'p139', label: 'ch_workflow_summary' } },
+{ data: { source: 'p139', target: 'p140'} },
+{ data: { source: 'p140', target: 'p143', label: 'ch_multiqc_files' } },
+{ data: { source: 'p141', target: 'p142', label: 'ch_methods_description' } },
+{ data: { source: 'p142', target: 'p143'} },
+{ data: { source: 'p143', target: 'p145', label: 'ch_multiqc_files' } },
+{ data: { source: 'p144', target: 'p145'} },
+{ data: { source: 'p145', target: 'p148', label: 'ch_multiqc_files' } },
+{ data: { source: 'p146', target: 'p147'} },
+{ data: { source: 'p147', target: 'p148'} },
+{ data: { source: 'p148', target: 'p151', label: 'ch_multiqc_files' } },
+{ data: { source: 'p149', target: 'p150'} },
+{ data: { source: 'p150', target: 'p151'} },
+{ data: { source: 'p151', target: 'p154', label: 'ch_multiqc_files' } },
+{ data: { source: 'p152', target: 'p153'} },
+{ data: { source: 'p153', target: 'p154'} },
+{ data: { source: 'p154', target: 'p157', label: 'ch_multiqc_files' } },
+{ data: { source: 'p155', target: 'p156'} },
+{ data: { source: 'p156', target: 'p157'} },
+{ data: { source: 'p157', target: 'p158', label: 'ch_multiqc_files' } },
+{ data: { source: 'p158', target: 'p162'} },
+{ data: { source: 'p159', target: 'p162'} },
+{ data: { source: 'p1', target: 'p160', label: 'ch_multiqc_custom_config' } },
+{ data: { source: 'p160', target: 'p162'} },
+{ data: { source: 'p161', target: 'p162'} },
+{ data: { source: 'p162', target: 'p166'} },
+{ data: { source: 'p162', target: 'p165'} },
+{ data: { source: 'p162', target: 'p164'} },
+{ data: { source: 'p162', target: 'p163'} },
+{ data: { source: 'p166', target: 'p167'} },
+],
+},
+
+                });
+
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>Nextflow Cytoscape.js with Dagre</h1>
+        <div id="cy"></div>
+    </body>
+
+</html>

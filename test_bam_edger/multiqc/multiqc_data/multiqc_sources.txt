@@ -1,0 +1,17 @@
+Module	Section	Sample Name	Source
+featureCounts	all_sections	ERR204916	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/17/ERR204916.featureCounts.txt.summary
+featureCounts	all_sections	ERR188428	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/18/ERR188428.featureCounts.txt.summary
+featureCounts	all_sections	ERR188454	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/16/ERR188454.featureCounts.txt.summary
+featureCounts	all_sections	ERR188383	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/15/ERR188383.featureCounts.txt.summary
+Samtools	stats	ERR188383	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/7/ERR188383.stats
+Samtools	stats	ERR188454	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/9/ERR188454.stats
+Samtools	stats	ERR204916	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/10/ERR204916.stats
+Samtools	stats	ERR188428	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/8/ERR188428.stats
+Samtools	flagstat	ERR188454	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/11/ERR188454.flagstat
+Samtools	flagstat	ERR204916	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/14/ERR204916.flagstat
+Samtools	flagstat	ERR188383	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/12/ERR188383.flagstat
+Samtools	flagstat	ERR188428	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/13/ERR188428.flagstat
+Samtools	idxstats	ERR188454	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/4/ERR188454.idxstats
+Samtools	idxstats	ERR204916	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/3/ERR204916.idxstats
+Samtools	idxstats	ERR188428	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/6/ERR188428.idxstats
+Samtools	idxstats	ERR188383	/media/RAID_4TB/TMP_nextflow/96/f7493000439be19af3ea13eaddf6fd/5/ERR188383.idxstats

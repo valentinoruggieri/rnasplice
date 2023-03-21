@@ -1,0 +1,26 @@
+BEDTOOLS_GENOMECOV:
+  bedtools: 2.30.0
+CUSTOM_DUMPSOFTWAREVERSIONS:
+  python: 3.10.6
+  yaml: '6.0'
+SAMPLESHEET_CHECK:
+  python: 3.9.5
+SAMTOOLS_FLAGSTAT:
+  samtools: 1.16.1
+SAMTOOLS_IDXSTATS:
+  samtools: 1.16.1
+SAMTOOLS_INDEX:
+  samtools: 1.16.1
+SAMTOOLS_SORT:
+  samtools: 1.16.1
+SAMTOOLS_STATS:
+  samtools: 1.16.1
+SUBREAD_FEATURECOUNTS:
+  subread: 2.0.1
+UCSC_BEDCLIP:
+  ucsc: '377'
+UCSC_BEDGRAPHTOBIGWIG:
+  ucsc: '377'
+Workflow:
+  Nextflow: 22.10.7
+  nf-core/rnasplice: 1.0dev
