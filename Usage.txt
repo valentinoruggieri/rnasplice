@@ -20,7 +20,10 @@ DexTranscripts: --
 SUPPA: --
 
 The typical command for running the pipeline from this configuration is as follows:
-nextflow run nf-core/rnasplice --input samplesheet.csv --outdir <OUTDIR> --fasta fasta.fasta –step all –edgeRexon -profile docker
+nextflow run main.nf --input samplesheet.csv --fasta X.fa.gz --gtf genes_chrX.gtf --outdir test \\
+-profile docker -work-dir work --step all --edger_exon --rmats false --suppa false --skip_bigwig false --skip_alignment false
+
+#nextflow run nf-core/rnasplice --input samplesheet.csv --outdir <OUTDIR> --fasta fasta.fasta –step all –edgeRexon -profile docker
 This will launch the pipeline strating from fastq files and applying the edgeR alghorythm for rna splicing analysis.
 
 #####################
@@ -42,7 +45,10 @@ rMATS: --
 
 
 The typical command for running the pipeline is as follows:
-nextflow run nf-core/rnasplice --input samplesheet.csv --outdir <OUTDIR> --fasta fasta.fasta –step bam –edgeRexon -profile docker
+#nextflow run nf-core/rnasplice --input samplesheet.csv --outdir <OUTDIR> --fasta fasta.fasta –step bam –edgeRexon -profile docker
+nextflow run main.nf --input samplesheet_bam.csv --fasta X.fa.gz --gtf genes_chrX.gtf --outdir test_bam \\
+-profile docker -work-dir work --step bam --edger_exon --rmats false --suppa false --skip_bigwig false
+
 This will launch the pipeline starting from bam files and execute the analysis using edgeR tool. 
 
 
@@ -68,5 +74,8 @@ SUPPA: --
 
 
 The typical command for running the pipeline is as follows:
-nextflow run nf-core/rnasplice --input samplesheet.csv --outdir <OUTDIR> --fasta fasta.fasta –step transcriptome --SUPPA -profile docker
+#nextflow run nf-core/rnasplice --input samplesheet.csv --outdir <OUTDIR> --fasta fasta.fasta –step transcriptome --SUPPA -profile docker
+nextflow run main.nf --input samplesheet_bam.csv --fasta X.fa.gz --gtf genes_chrX.gtf --outdir test_transcriptome \\
+-profile docker -work-dir work --step transcriptome --rmats false --suppa true --skip_bigwig false
+
 This will launch the pipeline starting from bam + transcriptome files and execute the analysis using SUPPA2 tool. 
