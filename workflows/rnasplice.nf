@@ -191,12 +191,12 @@ workflow RNASPLICE {
 
 
     // Create samplesheet channel to make sure the channel use the *.valid.csv that include some sample ID modification in some cases and this cause failing in some *.R scripts like edgeR
-    SAMPLESHEET_CHECK (
-        ch_input
-        )
-    ch_samplesheet = SAMPLESHEET_CHECK.out.csv
+//    SAMPLESHEET_CHECK (
+//        ch_input
+//        )
+//    ch_samplesheet = SAMPLESHEET_CHECK.out.csv
     // Create samplesheet channel (after input check)
-    ch_samplesheet_raw = Channel.fromPath(params.input)   // Suppa uses raw sample_ID. Added this channel for SUPPA. Try to merge
+    ch_samplesheet = Channel.fromPath(params.input)   // Suppa uses raw sample_ID. Added this channel for SUPPA. Try to merge
 
     // Take software versions from input check (.first() not required)
 //    ch_versions = ch_versions.mix(INPUT_CHECK.out.versions)
@@ -343,7 +343,7 @@ workflow RNASPLICE {
             EDGER_DEU(
                 PREPARE_GENOME.out.gtf,
                 ch_genome_bam,
-                ch_samplesheet_raw
+                ch_samplesheet
             )
 
             ch_versions = ch_versions.mix(EDGER_DEU.out.versions)
@@ -451,7 +451,7 @@ workflow RNASPLICE {
                 DRIMSEQ_DEXSEQ_DTU_STAR_SALMON (
                     ch_txi,
                     TX2GENE_TXIMPORT_STAR_SALMON.out.tximport_tx2gene,
-                    ch_samplesheet_raw
+                    ch_samplesheet
                 )
 
                 ch_versions = ch_versions.mix(DRIMSEQ_DEXSEQ_DTU_STAR_SALMON.out.versions)
@@ -471,7 +471,7 @@ workflow RNASPLICE {
                 SUPPA_STAR_SALMON (
                     PREPARE_GENOME.out.gtf,
                     ch_suppa_tpm,
-                    ch_samplesheet_raw,   // original was: ch_samplesheet, Channel.fromPath(params.input)
+                    ch_samplesheet,
                 )
 
                 ch_versions = ch_versions.mix(SUPPA_STAR_SALMON.out.versions)
@@ -536,7 +536,7 @@ workflow RNASPLICE {
             DRIMSEQ_DEXSEQ_DTU_SALMON (
                 ch_txi,
                 TX2GENE_TXIMPORT_SALMON.out.tximport_tx2gene,
-                ch_samplesheet_raw
+                ch_samplesheet
             )
 
             ch_versions = ch_versions.mix(DRIMSEQ_DEXSEQ_DTU_SALMON.out.versions)
@@ -556,7 +556,7 @@ workflow RNASPLICE {
             SUPPA_SALMON (
                 PREPARE_GENOME.out.gtf,
                 ch_suppa_tpm,
-                ch_samplesheet_raw,
+                ch_samplesheet,
             )
 
             ch_versions = ch_versions.mix(SUPPA_SALMON.out.versions)

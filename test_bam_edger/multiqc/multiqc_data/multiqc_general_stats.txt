@@ -1,5 +1,0 @@
-Sample	featureCounts_mqc-generalstats-featurecounts-percent_assigned	featureCounts_mqc-generalstats-featurecounts-Assigned	Samtools_mqc-generalstats-samtools-error_rate	Samtools_mqc-generalstats-samtools-non_primary_alignments	Samtools_mqc-generalstats-samtools-reads_mapped	Samtools_mqc-generalstats-samtools-reads_mapped_percent	Samtools_mqc-generalstats-samtools-reads_properly_paired_percent	Samtools_mqc-generalstats-samtools-reads_MQ0_percent	Samtools_mqc-generalstats-samtools-raw_total_sequences	Samtools_mqc-generalstats-samtools-flagstat_total	Samtools_mqc-generalstats-samtools-mapped_passed	Samtools_mqc-generalstats-samtools-mapped_passed_pct
-ERR188383	92.70029555868527	46733	0.004190944	2094.0	98732.0	100.0	100.0	0.04659077097597537	98732.0	100826	100826	100.0
-ERR188428	92.20947630922693	46220	0.004708014	1958.0	98292.0	100.0	100.0	0.044764579009481956	98292.0	100250	100250	100.0
-ERR188454	91.24159746935547	46150	0.004516713	2360.0	98800.0	100.0	100.0	0.04251012145748988	98800.0	101160	101160	100.0
-ERR204916	91.8845087834739	46081	0.005402685	2120.0	98182.0	100.0	100.0	0.04481473182457069	98182.0	100302	100302	100.0
